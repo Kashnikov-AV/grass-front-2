@@ -1,0 +1,299 @@
+@font-face {
+    font-family: 'Gilroy';
+    src: local('fonts/Gilroy/Gilroy Medium Italic'), local('Gilroy-Medium-Italic'),
+        url('fonts/Gilroy/Gilroy-MediumItalic.woff2') format('woff2'),
+        url('fonts/Gilroy/Gilroy-MediumItalic.woff') format('woff'),
+        url('fonts/Gilroy/Gilroy-MediumItalic.ttf') format('truetype');
+    font-weight: 500;
+    font-style: italic;
+  }
+
+@font-face {
+font-family: 'Gilroy';
+src: url('fonts/Gilroy/Gilroy-Regular.eot');
+src: local('fonts/Gilroy Regular'), local('Gilroy-Regular'),
+    url('fonts/Gilroy/Gilroy-Regular.eot?#iefix') format('embedded-opentype'),
+    url('fonts/Gilroy/Gilroy-Regular.woff2') format('woff2'),
+    url('fonts/Gilroy/Gilroy-Regular.woff') format('woff'),
+    url('fonts/Gilroy/Gilroy-Regular.ttf') format('truetype');
+font-weight: normal;
+font-style: normal;
+
+  }
+
+
+
+body {
+    margin: 0;
+    font-family: 'Gilroy';
+    background-color: #F7F6F6;
+}
+
+.header {
+   
+    
+    height: 46px;
+    
+    
+    
+}
+
+.container {
+    
+    margin-left: 80px;
+    margin-right: 80px;
+    height: 46px;
+    
+}
+
+.items {
+    display: grid;
+    grid-template-columns: auto auto;
+
+    padding-top: 12px;
+    
+}
+
+.search {
+    display: flex;  
+}
+
+
+.but {
+  margin: 0;
+}
+
+.middle {
+  display: grid;
+  grid-template-columns: 25% 50% 25%;
+  padding-top: 26px;
+  
+}
+
+
+
+
+.middle-all {
+  display: flex;
+  text-align: right;
+  
+}
+
+.middle-all div {
+  padding-left: 32px;
+  color: #FFFF;
+  text-align: center;
+  float: right;
+  
+}
+
+.middle-last {
+  margin-right: 0px;
+}
+
+
+.name {
+    display: flex;
+    margin: 0;
+}
+
+.name p{
+
+    margin: 0;
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 22px;
+    
+    color: #20B84B;
+    padding-left: 10.75px;
+}
+
+.navigation {
+    color: #000;
+    text-decoration: none;
+
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+
+    margin-right: 32px;
+    
+}
+
+.navig_but {
+    text-align: right;
+}
+
+
+.searchpanel {
+    background-color: #20B84B;
+    height: 100px;
+}
+
+.logo {
+  margin-right: 32px;
+}
+
+
+
+form {
+    position: relative;
+    
+    width: 563px;
+    height: 48px; 
+    margin-right: 140px;
+    
+    
+  }
+  input, button {
+    border: none;
+    outline: none;
+    border-radius: 3px;
+  }
+  input {
+    width: 100%;
+    height: 42px;
+    background: #FFFFFF;
+    padding-left: 15px;
+    border: 1px solid #D4DCDE;
+    border-radius: 14px;
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    
+  }
+
+  input::placeholder {
+    color: #B7BEC0;
+  }
+
+  button {
+    
+    padding-top: 14px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+    background: none;
+  }
+
+/* Selection  */
+
+
+.selection {
+  background-color: #F7F6F6;
+  margin: 0;
+  display: grid;
+}
+
+.selection p {
+  margin: 0;
+}
+
+
+.selcontainer {
+  margin-left: 24px;
+  padding-right: 24px;
+  margin-top: 36px;
+  
+}
+
+.content {
+  margin-top: 28px;
+  
+  place-self: center;
+  
+  background-color: #fff;
+  
+  
+  width: 466px;
+  height: 572px;
+
+  box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.08);
+  border-radius: 20px;
+  
+}
+
+.content-less {
+  height: 476px;
+}
+
+.mail {
+  border: 1px solid #B7BEC0;
+  border-radius: 14px;
+  width: 400px;
+  height: 54px;
+  margin-bottom: 0px;
+  margin-top: 8px;
+
+  
+}
+input::placeholder {
+  color: #B7BEC0;
+}
+
+
+
+.btn {
+  width: 418px;
+  height: 54px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+
+}
+
+
+.green {
+  background: #20B84B;
+  border-radius: 14px;
+  color: #fff;
+  margin-top: 24px;
+}
+
+.white {
+
+  border: 1px solid #20B84B;
+  background-color: #fff;
+  color: #20B84B;
+  margin-top: 12px;
+  margin-bottom: 16px;
+}
+
+
+.sex {
+  display: flex;
+  
+  height: 54px;
+  border: 1px solid #D4DCDE;
+  border-radius: 14px;
+  padding-left: 4px;
+  padding-right: 4px;
+  
+}
+
+.btn-sex {
+  
+  margin-top: 4px;
+  height: 46px;
+  border: none;
+  border-radius: 10px;
+}
+
+.sex-grey {
+  background-color: #E9EDEF;
+}
+
+.sex-white {
+  background-color: #ffffff;
+}
+
+
+
+
+
+

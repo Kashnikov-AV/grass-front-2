@@ -1,0 +1,235 @@
+@import "header.scss";
+
+body{
+    background-color: #F7F6F6;
+}
+
+.change{
+    text-decoration: none;
+    color: #20B84B;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+
+input{
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px; 
+    outline-style: none;
+}
+
+.btn{
+    width: 418px;
+    height: 54px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    border: none;
+    border-radius: 14px;
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+
+    
+}
+
+.green{
+    background: #20B84B;
+    color: #fff;
+    margin-top: 24px;
+
+    &:hover{
+        background: #4FCB72;
+    }
+}
+
+.red{
+    background: #ED3838;
+    color: #fff;
+    margin-top: 24px;
+
+    &:hover{
+        background: #EB6565;
+    }
+}
+
+.white {
+    border: 1px solid #20B84B;
+    background-color: #fff;
+    color: #20B84B;
+    margin-top: 12px;
+    margin-bottom: 16px;
+
+    &:hover{
+        background: #f4f4f4;
+    }
+}
+
+.red-white {
+    border: 1px solid #ED3838;
+    background-color: #fff;
+    color: #ED3838;
+    margin-top: 12px;
+    margin-bottom: 16px;
+
+    &:hover{
+        background: #f4f4f4;
+    }
+}
+
+textarea{
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+
+
+    &::placeholder{
+        color: #B7BEC0;
+        
+    }
+}
+
+.selection {
+    background-color: #F7F6F6;
+    margin: 0;
+    display: grid;
+   
+    
+    
+    p{
+        margin: 0;
+    }
+
+
+    .content{
+        display: grid;
+        grid-template-columns: 70% 30%;
+        margin-top: 28px;
+        margin-left: 50px;
+
+        .selcontainer {
+            margin-left: 24px;
+            padding-right: 24px;
+            margin-top: 36px;
+            padding-top: 24px;
+            padding-left: 24px; 
+            background-color: #fff;
+            box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.08);
+            border-radius: 20px;
+
+
+            .prof-logo{
+                display: flex;
+                margin-bottom: 32px;
+
+
+                #price{
+                    .btn{
+                        width: 418px;
+                        height: 54px;
+                        font-style: normal;
+                        font-weight: 700;
+                        font-size: 16px;
+                        border: none;
+                        border-radius: 14px;
+                        font-family: 'Gilroy';
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 20px;
+        
+                        
+                    }
+                    .green{
+                        background: #20B84B;
+                        color: #fff;
+                        margin-top: 24px;
+        
+                        &:hover{
+                            background: #4FCB72;
+                        }
+                    }
+                }
+                
+            }
+
+            .line{
+                hr{
+                    height: 1px;
+                    background: #D4DCDE;
+                    border:none;
+                    margin-bottom: 32px;
+                }
+            }
+        }
+
+        
+    }
+}
+
+
+.new-div{
+    
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,.7);
+    z-index: 100;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    overflow: auto; 
+
+    .div-change{
+        width: 828px;
+        height: 680px;
+        background: rgb(255, 255, 255);
+        margin:auto;
+        border-radius: 20px;
+        padding-left: 24px;
+        
+        padding-right: 24px;
+
+        .input{
+            border: 1px solid #B7BEC0;
+            border-radius: 14px;
+            width: 382px;
+            height: 50px;
+            margin-bottom: 0px;
+        }
+
+
+        .sex{
+            display: flex;
+            width: 382px;
+            height: 54px;
+            border: 1px solid #b6bcbe;
+            border-radius: 14px;
+            padding-left: 4px;
+            padding-right: 4px;
+
+
+            .btn-sex{
+                width: 200px;
+                margin-top: 4px;
+                height: 46px;
+                border: none;
+                border-radius: 10px;
+            }
+
+            .sex-grey{
+                background-color: #E9EDEF;
+            }
+
+            .sex-white{
+                background-color: #ffffff;
+            }
+        }
+
+    }
+    
+}

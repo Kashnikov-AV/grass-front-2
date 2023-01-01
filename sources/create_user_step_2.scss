@@ -1,0 +1,106 @@
+@import "header.scss";
+
+
+
+body {
+    margin: 0;
+    font-family: 'Gilroy';
+    background-color: #F7F6F6;
+
+
+    .selection{
+        background-color: #F7F6F6;
+        margin: 0;
+        display: grid;
+
+        p{
+            margin: 0;
+        }
+
+        .content{
+            margin-top: 28px;
+  
+            place-self: center;
+            
+            background-color: #fff;
+            
+            
+            width: 466px;
+            height: 402px;
+
+            box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.08);
+            border-radius: 20px;
+
+
+            .selcontainer{
+                margin-left: 24px;
+                padding-right: 24px;
+                margin-top: 36px;
+                
+
+
+                .mail{
+                    border: 1px solid #B7BEC0;
+                    border-radius: 14px;
+                    width: 413px;
+                    height: 54px;
+                    margin-bottom: 0px;
+                    margin-top: 8px;
+                    outline: none;
+                    font-family: 'Gilroy';
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 16px;
+                    
+
+                    input{
+                        &::placeholder{
+                            color: #B7BEC0;
+                        }
+                    }
+                }
+
+                .btn {
+                    width: 418px;
+                    height: 54px;
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 16px;
+                    border: none;
+                    border-radius: 14px;
+                    font-family: 'Gilroy';
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 20px;
+                    
+                }
+                    
+                    
+                .green {
+                    background: #20B84B;
+                    border-radius: 14px;
+                    color: #fff;
+                    margin-top: 24px;
+
+                    &:hover{
+                        background: #4FCB72;
+                    }
+                }
+                    
+                .white {
+                    
+                    border: 1px solid #20B84B;
+                    background-color: #fff;
+                    color: #20B84B;
+                    margin-top: 12px;
+                    margin-bottom: 16px;
+
+                    &:hover{
+                        background: #f4f4f4;
+                    }
+                }
+                
+            }
+        }
+    }
+}

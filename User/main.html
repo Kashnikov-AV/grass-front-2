@@ -1,0 +1,1077 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../sources/user.css">
+</head>
+<body>
+    
+    <div id="new-div-main" class="new-div" style="display: none;">
+
+        <div class="div-change">
+
+
+            <div style="display: flex;">
+
+                <p style="font-weight: 700;
+                font-size: 32px;
+                margin-bottom: 32px;">Персональные данные</p>
+                <img src="img/x.svg" alt="" style="margin-left: auto; " onclick="deletedItem('new-div-main')">
+
+            </div>
+
+            <div style="display: flex;">
+
+                <img src="img/empty-photo.svg" alt="" style="margin-right: 32px;
+                margin-bottom: 20px;">
+
+                <div>
+
+                    <p style="margin-bottom: 8px;
+                    font-weight: 400;
+                    font-size: 14px;
+                    color: #6A6E70;">ФИО</p>
+                    <input type="text" placeholder="Фамилия Имя Отчество" class="input"/>
+
+                </div>
+                
+
+            </div>
+
+            <div style="display: flex;
+            margin-bottom: 20px;">
+
+                <div style="margin-right: 16px;">
+
+                    <p style="font-weight: 400;
+                    font-size: 14px;
+                    color: #6A6E70;">Дата рождения</p>
+                    <input type="text" placeholder="ДД.ММ.ГГГГ" class="input"/>
+
+                </div>
+
+
+                <div style="margin-top: 1px;">
+
+                    <p style="font-weight: 400;
+                    font-size: 14px;
+                    color: #6A6E70;
+                    margin-bottom: 12px;">Пол</p>
+                    <div class="sex">
+
+                        <input type="button" value=" Мужской " class="btn-sex sex-white work" onclick="menItem()">
+
+                        <input type="button" value=" Женский " class="btn-sex sex-grey workers" onclick="womenItem()">
+                        
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div style="display: flex;
+            margin-bottom: 20px;">
+
+                <div style="margin-right: 16px;">
+
+                    <p style="font-weight: 400;
+                    font-size: 14px;
+                    color: #6A6E70;">Компания</p>
+                    <input type="text" placeholder="Компания" class="input"/>
+
+                </div>
+                
+                
+                <div style="margin-right: 16px;">
+
+                    <p style="font-weight: 400;
+                    font-size: 14px;
+                    color: #6A6E70;">Должность</p>
+                    <input type="text" placeholder="Должность" class="input"/>
+
+                </div>
+
+            </div>
+
+
+            <div style="display: flex;">
+
+                <div style="margin-right: 16px;">
+
+                    <p style="font-weight: 400;
+                    font-size: 14px;
+                    color: #6A6E70;">Город проживания</p>
+                    <input type="text" placeholder="Город" class="input"/>
+
+                </div>
+                
+                
+                <div style="margin-right: 16px;">
+
+                    <p style="font-weight: 400;
+                    font-size: 14px;
+                    color: #6A6E70;">Желаемая зарплата</p>
+                    <input type="text" placeholder="Зарплата" class="input"/>
+
+                </div>
+
+            </div>
+
+            <input type="button" value="Сохранить изменения" class="btn green" style="width: 280px; margin-top: 32px">
+
+        </div>
+        
+    </div>
+
+
+
+
+    <div id="new-div-you" class="new-div" style="display: none;">
+
+        <div class="div-change" style="width: 848px;
+        height: 470px;">
+
+
+            <div style="display: flex;">
+
+                <p style="font-weight: 700;
+                font-size: 32px;
+                margin-bottom: 32px;">О себе</p>
+                <img src="img/x.svg" alt="" style="margin-left: auto; " onclick="deletedItem('new-div-you')">
+
+            </div>
+
+            
+            <div>
+
+                <p style="margin-bottom: 8px;
+                font-weight: 400;
+                font-size: 14px;
+                color: #6A6E70;">Вы можете написать о себе, своем опыте работы, отрасли или навыках.</p>
+                <textarea id="text" type="text" placeholder="Краткая информация о себе" class="input"  style="width: 825px;
+                height: 182px;
+                resize: none;
+                padding: 10px 10px;
+                outline: none;"></textarea>
+
+            </div>
+                
+
+            <input type="button" value="Сохранить изменения" class="btn green" style="width: 280px; margin-top: 32px; margin-right: 15px;">
+            <input type="button" value="Отмена" class="btn white" style="width: 280px; margin-top: 32px; border: 2px solid;">
+
+        </div>
+        
+    </div>
+
+
+    <div id="new-div-change" class="new-div" style="display: none;">
+
+        <div class="div-change" style="height: 532px;
+                                        width: 795px;">
+
+            <div style="display: flex;">
+
+                <p style="font-weight: 700;
+                font-size: 24px;
+                margin-bottom: 0px;">Образование</p>
+                <img src="img/x.svg" alt="" style="margin-left: auto; " onclick="deletedItem('new-div-change'); AddItem('new-div-study')">
+
+            </div>
+
+            <div style="display: flex;">
+                
+                <div style="margin-right: 16px;">
+
+                    <p>Учебное заведение</p>
+                    <input type="text" placeholder="Университет, колледж или институт" class="input">
+
+                </div>
+
+                <div>
+
+                    <p>Степень образования</p>
+                    <input type="text" placeholder="Введите степень" class="input">
+
+                </div>
+
+            </div>
+
+
+            <div style="display: flex;">
+                
+                <div style="margin-right: 16px;">
+
+                    <p>Специализация</p>
+                    <input type="text" placeholder="Специализация" class="input">
+
+                </div>
+
+                <div>
+
+                    <p>Год поступления</p>
+                    <input type="text" placeholder="Год поступления" class="input">
+
+                </div>
+
+            </div>
+
+
+            <div style="display: flex;">
+                
+                <div style="margin-right: 16px;">
+
+                    <p>Диплом и сертификат</p>
+
+                    <form id="upload-container" method="POST" action="send.php">
+                        <img id="upload-image" src="../sources/img/Clip.svg">
+                        <div>
+                             <input id="file-input" type="file" name="file" multiple>
+                             <label for="file-input">Загрузите документ</label>
+                             <span>или перетащите его сюда</span>
+                        </div>
+                   </form>
+
+                </div>
+
+                <div>
+
+                    <p>Год окончания</p>
+                    <input type="text" placeholder="Год окончания" class="input">
+
+                </div>
+
+            </div>
+            
+            
+            
+            <div style="display:flex;">
+
+                <input type="button" value="Сохранить изменения" class="btn green" style="width: 250px; margin-top: 16px; margin-right: 16px; font-size: 16px;">
+                <input type="button" value="Отмена" class="btn white" style="width: 250px; margin-top: 16px; border: 2px solid; font-size: 16px;">
+
+            </div>
+            
+        </div>
+        
+    </div>
+
+
+    <div id="new-div-study" class="new-div" style="display: none;">
+        <div id="new-div-delete" class="new-div" style="display: none;">
+
+            <div class="div-change" style="height: 206px;
+            width: 520px; padding-bottom: 20px;">
+    
+                <div style="display: flex;">
+    
+                    <p style="font-weight: 700;
+                    font-size: 24px;
+                    margin-bottom: 0px;">Вы точно хотите удалить место обучения?</p>
+                    <img src="img/x.svg" alt="" style="margin-left: auto; " onclick="deletedItem('new-div-delete')">
+    
+                </div>
+    
+                <p>Отменить данное действие будет невозможно</p>
+                
+                <div style="display:flex;">
+
+                    <input type="button" value="Удалить" class="btn red" style="width: 250px; margin-top: 16px; margin-right: 16px; font-size: 16px;">
+                    <input type="button" value="Нет, не удалять" class="btn red-white" style="width: 250px; margin-top: 16px; border: 2px solid; font-size: 16px;">
+
+                </div>
+                
+            </div>
+            
+        </div>
+
+
+
+        <div class="div-change" style="height: 398px">
+
+            <div style="display: flex;">
+
+                <p style="font-weight: 700;
+                font-size: 32px;
+                margin-bottom: 32px;">Образование</p>
+                <img src="img/x.svg" alt="" style="margin-left: auto; " onclick="deletedItem('new-div-study')">
+
+            </div>
+
+            <div style="background-color: #F7F6F6;
+            border-radius: 14px;
+            padding-left: 20px;
+            padding-bottom: 20px;">
+
+    
+    
+                <div style="display: grid;
+                    grid-template-columns: 394px 394px;">
+    
+                    <div>
+    
+                        <p style="font-weight: 500;
+                        font-size: 16px;
+                        line-height: 22px;
+                        margin-bottom: 4;">Высшее образование(неоконченное)</p>
+                        <p style="font-weight: 500;
+                        font-size: 14px;
+                        line-height: 22px;
+                        color: #6A6E70;
+                        margin-bottom: 16px;">Бакалавриат, 2020 - 2024 год</p>
+    
+                    </div>
+    
+                    <div>
+    
+                        <p style="font-weight: 500;
+                        font-size: 16px;
+                        line-height: 22px;
+                        margin-bottom: 4;">Московский государственный университет</p>
+                        <p style="font-weight: 500;
+                        font-size: 14px;
+                        line-height: 22px;
+                        color: #6A6E70;
+                        margin-bottom: 16px;">Информатика и вычислительная техника</p>
+    
+                    </div>
+
+                </div>
+
+                
+
+                <a href="#" style="
+                    color: #6A6E70;
+                    font-family: 'Gilroy';
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 16px;
+                    line-height: 22px;
+                    text-decoration: none;
+                    border-bottom: 1px solid #6A6E70;
+                    ">Диплом или сертификат
+                </a><br>
+
+                <div style="display: flex; padding-top: 15px;">
+
+                    <div>
+
+                        <img src="../sources/img/Change.svg" alt="">
+                        <a href="#" style="text-decoration: none;
+                        color: #20B84B;" onclick="AddItem('new-div-change')
+                                                    deletedItem('new-div-study')">Изменить</a>
+
+                    </div>
+
+                    <div style="margin-left: 15px;">
+
+                        <img src="../sources/img/Delete.svg" alt="">
+                        <a href="#" style="text-decoration: none;
+                        color: #ED3838;" onclick="AddItem('new-div-delete')">Удалить</a>
+
+                    </div>
+
+                    
+                </div>
+                
+    
+                    
+            </div>
+            
+
+            <input type="button" value="Добавить место обучения" class="btn green" style="width: 280px; margin-top: 32px; margin-right: 16px;">
+            <input type="button" value="Отмена" class="btn white" style="width: 280px; margin-top: 32px; border: 2px solid;">
+        </div>
+        
+    </div>
+
+
+    <div id="new-div-job" class="new-div" style="display: none;">
+        <div id="new-div-delete-job" class="new-div" style="display: none;">
+
+            <div class="div-change" style="height: 206px;
+            width: 520px; padding-bottom: 0px;">
+    
+                <div style="display: flex;">
+    
+                    <p style="font-weight: 700;
+                    font-size: 24px;
+                    margin-bottom: 0px;">Вы точно хотите удалить место работы?</p>
+                    <img src="img/x.svg" alt="" style="margin-left: auto; " onclick="deletedItem('new-div-delete-job')">
+    
+                </div>
+    
+                <p>Отменить данное действие будет невозможно</p>
+                
+                <div style="display:flex;">
+
+                    <input type="button" value="Удалить" class="btn red" style="width: 250px; margin-top: 16px; margin-right: 16px; font-size: 16px;">
+                    <input type="button" value="Нет, не удалять" class="btn red-white" style="width: 250px; margin-top: 16px; border: 2px solid; font-size: 16px;">
+
+                </div>
+                
+            </div>
+            
+        </div>
+
+
+
+        <div class="div-change" style="height: 475px">
+
+            <div style="display: flex;">
+
+                <p style="font-weight: 700;
+                font-size: 32px;
+                margin-bottom: 32px;">Опыт работы</p>
+                <img src="img/x.svg" alt="" style="margin-left: auto; " onclick="deletedItem('new-div-job')">
+
+            </div>
+
+            <div style="background-color: #F7F6F6;
+            border-radius: 14px;
+            padding-left: 20px;
+            padding-bottom: 20px;">
+
+    
+    
+                <div style="display: grid;
+                    grid-template-columns: 394px 394px;">
+    
+                    <div>
+    
+                        <p style="font-weight: 500;
+                        font-size: 16px;
+                        line-height: 22px;
+                        margin-bottom: 4;">GrassJob</p>
+                        <p style="font-weight: 500;
+                        font-size: 14px;
+                        line-height: 22px;
+                        color: #6A6E70;
+                        margin-bottom: 16px;">Март 2022 - по настоящее время</p>
+    
+                    </div>
+    
+                    <div>
+    
+                        <p style="font-weight: 500;
+                        font-size: 16px;
+                        line-height: 22px;
+                        margin-bottom: 4;">Frontend разработчик</p>
+                        <p style="font-weight: 500;
+                        font-size: 14px;
+                        line-height: 22px;
+                        color: #6A6E70;
+                        margin-bottom: 16px;">Москва полная занятость</p>
+    
+                    </div>
+
+                </div>
+
+                
+
+                <div>
+    
+                    <p style="font-weight: 500;
+                    font-size: 16px;
+                    line-height: 22px;
+                    margin-bottom: 4;">Обязанности</p>
+                    <p style="font-weight: 500;
+                    font-size: 14px;
+                    line-height: 22px;
+                    color: #6A6E70;
+                    margin-bottom: 16px;">цшарцшйацугрйашцруашгцурарцуйшарцшйрацшйрацйрашцрйра</p>
+
+                </div>
+                
+                <br>
+
+                <div style="display: flex; padding-top: 15px;">
+
+                    <div>
+
+                        <img src="../sources/img/Change.svg" alt="">
+                        <a href="#" style="text-decoration: none;
+                        color: #20B84B;" onclick="AddItem('new-div-change-job')
+                                                    deletedItem('new-div-job')">Изменить</a>
+
+                    </div>
+
+                    <div style="margin-left: 15px;">
+
+                        <img src="../sources/img/Delete.svg" alt="">
+                        <a href="#" style="text-decoration: none;
+                        color: #ED3838;" onclick="AddItem('new-div-delete-job')">Удалить</a>
+
+                    </div>
+
+                    
+                </div>
+                
+    
+                    
+            </div>
+            
+
+            <input type="button" value="Добавить место работы" class="btn green" style="width: 280px; margin-top: 32px; margin-right: 16px;">
+            <input type="button" value="Отмена" class="btn white" style="width: 280px; margin-top: 32px; border: 2px solid;">
+        </div>
+        
+    </div>
+
+
+
+    <div id="new-div-change-job" class="new-div" style="display: none;">
+
+        <div class="div-change" style="height: 862px;
+                                        width: 795px;">
+
+            <div style="display: flex;">
+
+                <p style="font-weight: 700;
+                font-size: 24px;
+                margin-bottom: 0px;">Опыт работы</p>
+                <img src="img/x.svg" alt="" style="margin-left: auto; " onclick="deletedItem('new-div-change-job'); AddItem('new-div-job')">
+
+            </div>
+
+            <div style="display: flex;">
+                
+                <div style="margin-right: 16px;">
+
+                    <p>Название компании</p>
+                    <input type="text" placeholder="Компания" class="input">
+
+                </div>
+
+                <div>
+
+                    <p>Тип занятости</p>
+                    <input type="text" placeholder="Тип занятости" class="input">
+
+                </div>
+
+            </div>
+
+
+            <div style="display: flex;">
+                
+                <div style="margin-right: 16px;">
+
+                    <p>Должность</p>
+                    <input type="text" placeholder="Должность" class="input">
+
+                </div>
+
+                <div>
+
+                    <p>Местоположение</p>
+                    <input type="text" placeholder="Город" class="input">
+
+                </div>
+
+            </div>
+
+
+            <div style="display: flex;">
+                
+                <div style="margin-right: 16px;">
+
+                    <p>Дата начала</p>
+
+
+                    <div style="display: flex;">
+
+                        <input type="text" placeholder="Месяц" class="input" style="width: 258px; margin-right: 8px;">
+                        <input type="text" placeholder="Год" class="input" style="width: 126px;">
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+
+            <div style="display: flex;">
+
+                <input type="checkbox"  style="margin-top: 12px; width: 24px; height: 24px;">
+                <p style="margin-bottom: 0;">По настоящее время</p>
+                
+            </div>
+
+
+            <div style="display: flex;">
+                
+                <div style="margin-right: 16px;">
+
+                    <p>Дата окончания</p>
+
+
+                    <div style="display: flex;">
+
+                        <input type="text" placeholder="Месяц" class="input" style="width: 258px; margin-right: 8px;">
+                        <input type="text" placeholder="Год" class="input" style="width: 126px;">
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+
+
+            <div>
+
+                <p style="margin-bottom: 8px;
+                font-weight: 400;
+                font-size: 14px;
+                color: #6A6E70;">Обязанности на рабочем месте</p>
+                <textarea id="text" type="text" placeholder="Напишите чем вы занимались в этой компании" class="input"  style="width: 770px;
+                height: 182px;
+                resize: none;
+                padding: 10px 10px;
+                outline: none;"></textarea>
+
+            </div>
+
+            
+            
+            
+            
+            <div style="display:flex;">
+
+                <input type="button" value="Сохранить изменения" class="btn green" style="width: 250px; margin-top: 16px; margin-right: 16px; font-size: 16px;">
+                <input type="button" value="Отмена" class="btn white" style="width: 250px; margin-top: 16px; border: 2px solid; font-size: 16px;">
+
+            </div>
+            
+        </div>
+        
+    </div>
+    
+
+    <header class="header">
+        <div class="container">
+            <div class="items">
+                <div class="name">
+                    <img src="img/Vector.svg" alt="">
+                    <p>Москва</p>
+                </div>
+                
+                <div class="navig_but">
+                    <a href="https://ru.wikipedia.org/wiki/Колесо_имени_850-летия_Москвы" class="navigation">Работодатели</a>
+                    <a href="#" class="navigation">Вузы</a>
+                    <a href="#" class="navigation">Статьи</a>
+                    <a href="#" class="navigation">Партнеры</a>
+                    <a href="#" class="navigation nav-last">О нас</a>
+                </div>
+                
+            </div>
+            
+           
+        </div>
+
+        <div class="searchpanel">
+
+            <div class="container">
+                <div class="middle cont">
+                    <img src="img/Logo.svg" alt="" class="logo">
+                    <div class="search">
+
+                        
+
+                        <form>
+                            <input type="text" placeholder="Поиск по вакансиям и работодателям">
+                            <button type="submit"><img src="img/Search.svg" alt=""></button>
+                        </form>
+                        
+
+                    </div>
+                    
+                    <div class="middle-all">
+                        
+                        
+                        <div class="middle-last">
+                            <img src="img/Message.svg" alt="" class="but">
+                            <p class="but">Сообщения</p>
+                        </div>
+                        
+                        <div class="middle-first">
+                            <img src="img/Bag.svg" alt="" class="but">
+                            <p class="but">Вакансии</p>
+                        </div>
+                        
+                        <div class="middle-first">
+                            <img src="img/Pie.svg" alt="" class="but">
+                            <p class="but">Аналитика</p>
+                        </div>
+
+                        <div class="middle-first right">
+                            <img src="img/Men.svg" alt="" class="but">
+                            <p class="but right">Профиль</p>
+                        </div>
+
+                        
+                    </div>
+                    
+                    
+                </div>
+                
+                
+
+            </div>
+
+        
+        </div>
+
+
+        <div class="selection">
+            
+
+            <div class="content">
+                <div class="selcontainer" style="height: 700px;">
+
+
+                    <div class="prof-logo">
+
+                        <img src="img/empty-photo.svg" alt="" style="margin-right: 24px;">
+
+                        <div class="prof-info">
+
+                            <p style="margin-bottom: 12px;
+                            font-style: normal;
+                            font-weight: 700;
+                            font-size: 24px;">Иванов Иван Иванович</p>
+
+
+                            <p style="margin-bottom: 15px;
+                            font-style: normal;
+                            font-weight: 500;
+                            font-size: 18px;">Разработчик - GrassJob</p>
+
+                            <div class="change" style="display: flex;">
+                                <p style="font-weight: 500;
+                                font-size: 16px;
+                                color: #6A6E70;
+                                margin-right: 16px;">Москва, 19 лет, мужчина</p>
+                                <a href="#" class="change" onclick="AddItem('new-div-main')">Изменить</a>
+                            </div>
+
+                        </div>
+                        <div id="price"  style="margin-left: auto;">
+
+                            <p style="font-style: normal;
+                                font-weight: 500;
+                                font-size: 18px;
+                                padding-top: 7px;
+                                padding-left: 339px;
+                                color: #6A6E70;
+                                margin-left: auto;">60000₽</p>
+
+                            <input type="button" value="Написать" class="btn green" style="width: 190px; margin-left: 220px;   ">
+
+                        </div>
+                        
+
+                    </div>
+
+                    <div class="line">
+
+                        <hr>
+
+                    </div>
+                    
+
+                    <div style="display: flex;">
+
+                        <p style="font-style: normal;
+                        font-weight: 700;
+                        font-size: 18px;
+                        margin-bottom: 24px;
+                        margin-right: 16px;">О себе</p>
+
+                        <a href="#" class="change change-1" style="padding-top: 2px;" onclick="AddItem('new-div-you')">Изменить</a>
+
+                    </div>
+
+                    <p style="font-size: 14px;
+                    line-height: 22px;
+                    margin-bottom: 48px;">Люблю работать и делать хорошо работу а ещё работать, люблю работать и делать хорошо работу а ещё работать, люблю работать и делать хорошо работу а ещё работать, люблю работать и делать хорошо работу а ещё работать</p>
+                    
+
+
+                    <div style="display: flex;">
+
+                        <p style="font-style: normal;
+                        font-weight: 700;
+                        font-size: 18px;
+                        margin-bottom: 24px;
+                        margin-right: 16px;">Образование</p>
+
+                        <a href="#" class="change" style="padding-top: 2px;" onclick="AddItem('new-div-study')">Изменить</a>
+
+                    </div>
+
+                    <div style="display: grid;
+                         grid-template-columns: 394px 394px;">
+
+                        <div>
+
+                            <p style="font-weight: 500;
+                            font-size: 16px;
+                            line-height: 22px;
+                            margin-bottom: 4;">Высшее образование(неоконченное)</p>
+                            <p style="font-weight: 500;
+                            font-size: 14px;
+                            line-height: 22px;
+                            color: #6A6E70;
+                            margin-bottom: 16px;">Бакалавриат, 2020 - 2024 год</p>
+
+                        </div>
+
+                        <div>
+
+                            <p style="font-weight: 500;
+                            font-size: 16px;
+                            line-height: 22px;
+                            margin-bottom: 4;">Московский государственный университет</p>
+                            <p style="font-weight: 500;
+                            font-size: 14px;
+                            line-height: 22px;
+                            color: #6A6E70;
+                            margin-bottom: 16px;">Информатика и вычислительная техника</p>
+
+                        </div>
+
+                    </div>
+
+                    <a href="#" style="
+                        color: #6A6E70;
+                        font-family: 'Gilroy';
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 16px;
+                        line-height: 22px;
+                        text-decoration: none;
+                        border-bottom: 1px solid #6A6E70;
+                        ">Диплом или сертификат</a>
+
+                    <div style="display: flex;
+                        margin-top: 48px;">
+
+                        <p style="font-style: normal;
+                        font-weight: 700;
+                        font-size: 18px;
+                        margin-bottom: 24px;
+                        margin-right: 16px;">Опыт работы</p>
+
+                        <a href="#" class="change" style="padding-top: 2px;" onclick="AddItem('new-div-job')">Изменить</a>
+
+                    </div>
+
+                    <div style="display: grid;
+                        grid-template-columns: 394px 394px;">
+
+                        <div>
+
+                            <p style="font-weight: 500;
+                            font-size: 16px;
+                            line-height: 22px;
+                            margin-bottom: 4;">GrassJob</p>
+                            <p style="font-weight: 500;
+                            font-size: 14px;
+                            line-height: 22px;
+                            color: #6A6E70;
+                            margin-bottom: 16px;">Март 2022 — по настоящее время</p>
+
+                        </div>
+
+                        <div>
+
+                            <p style="font-weight: 500;
+                            font-size: 16px;
+                            line-height: 22px;
+                            margin-bottom: 4;">Frontend - разработчик</p>
+                            <p style="font-weight: 500;
+                            font-size: 14px;
+                            line-height: 22px;
+                            color: #6A6E70;
+                            margin-bottom: 16px;">Полная занятость</p>
+
+                        </div>
+
+                    </div>
+
+
+                    <div>
+
+                        <p style="font-weight: 500;
+                        font-size: 16px;
+                        line-height: 22px;
+                        margin-bottom: 4;">Обязанности на рабочем месте</p>
+                        <p style="font-weight: 500;
+                        font-size: 14px;
+                        line-height: 22px;
+                        color: #6A6E70;
+                        margin-bottom: 36px;
+                        ">Люблю работать и делать хорошо работу а ещё работать, люблю работать и делать хорошо работу а ещё работать, люблю работать и делать хорошо работу а ещё работать, люблю работать и делать хорошо работу а ещё работать</p>
+
+                    </div>
+                
+                </div> 
+
+                <div>
+
+                    <div  class="selcontainer" style="margin-left: 16px;
+                        margin-right: 80px;
+                        height: 320px;">
+
+                        <p style="font-style: normal;
+                        font-weight: 700;
+                        font-size: 24px;
+                        margin-bottom: 32px;">Контактные данные</p>
+
+
+                        <p style="font-style: normal;
+                        font-weight: 500;
+                        font-size: 16px;
+                        margin-bottom: 8px;">Сайт</p>
+
+                        <a href="#" class="change">ivangrass.ru</a>
+
+
+
+                        <p style="margin-top: 24px;
+                            margin-bottom: 8px;
+                            color: #6A6E70;">Телефон</p>
+                        <p style="font-style: normal;
+                        font-weight: 700;
+                        font-size: 16px;
+                        margin-bottom: 24px;">+7 (988) 333-42-02</p>
+
+
+
+                        <p style="color: #6A6E70;
+                        margin-bottom: 8px;">Email</p>
+                        <p  style="font-style: normal;
+                        font-weight: 700;
+                        font-size: 16px;
+                        margin-bottom: 24px;">deanna.curtis@example.com</p>
+
+
+                        <a href="#" class="change">Изменить</a>
+
+
+                    </div>
+
+                    <p style="
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 24px;
+                    color: #6A6E70;
+                    margin-left: 30px;
+                    margin-top: 32px;">Рекомендованные вакансии</p>
+
+                    <div  class="selcontainer" style="margin-left: 16px;
+                        margin-right: 80px;
+                        height: 166px;">
+
+                        <div style="display: flex;">
+                            <p style="font-weight: 700;
+                            font-size: 18px;">Инженер</p>
+                            <p style="margin-left: 16px;
+                            color: #6A6E70;
+                            margin-top: 2px;">GrassJob</p>
+                            <p style="margin-left: auto;
+                            color: #6A6E70;">42 мин. назад</p>
+                        </div>
+
+                        <p style="
+                        color: #6A6E70;
+                        margin-top: 8px;
+                        margin-bottom: 16px;">от 60 000 ₽</p>
+
+                        <input type="button" value="Перейти" class="btn white" style="width: 250px;
+                        margin-bottom: 0;">
+                        
+
+                    </div>
+
+                    <div  class="selcontainer" style="margin-left: 16px;
+                        margin-right: 80px;
+                        height: 166px;">
+
+                        <div style="display: flex;">
+                            <p style="font-weight: 700;
+                            font-size: 18px;">Инженер</p>
+                            <p style="margin-left: 16px;
+                            color: #6A6E70;
+                            margin-top: 2px;">GrassJob</p>
+                            <p style="margin-left: auto;
+                            color: #6A6E70;">42 мин. назад</p>
+                        </div>
+
+                        <p style="
+                        color: #6A6E70;
+                        margin-top: 8px;
+                        margin-bottom: 16px;">от 60 000 ₽</p>
+
+                        <input type="button" value="Перейти" class="btn white" style="width: 250px; margin-bottom: 0;">
+                        
+
+                    </div>
+
+
+                    <div  class="selcontainer" style="margin-left: 16px;
+                        margin-right: 80px;
+                        height: 166px;">
+
+                        <div style="display: flex;">
+                            <p style="font-weight: 700;
+                            font-size: 18px;">Инженер</p>
+                            <p style="margin-left: 16px;
+                            color: #6A6E70;
+                            margin-top: 2px;">GrassJob</p>
+                            <p style="margin-left: auto;
+                            color: #6A6E70;">42 мин. назад</p>
+                        </div>
+
+                        <p style="
+                        color: #6A6E70;
+                        margin-top: 8px;
+                        margin-bottom: 16px;">от 60 000 ₽</p>
+
+                        <input type="button" value="Перейти" class="btn white" style="width: 250px;">
+                        
+
+                    </div>  
+
+                </div>
+                
+
+                  
+            </div>
+
+            
+           
+
+
+        </div>
+        
+
+        
+    </header>
+
+
+    
+
+
+    <script src="script.js"></script>
+    
+</body> 
+</html>
