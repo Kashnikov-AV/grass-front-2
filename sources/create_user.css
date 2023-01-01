@@ -1,0 +1,224 @@
+@font-face {
+  font-family: "Gilroy";
+  src: local("../sources/fonts/Gilroy/Gilroy Medium Italic"), local("Gilroy-Medium-Italic"), url("../sources/fonts/Gilroy/Gilroy-MediumItalic.woff2") format("woff2"), url("../sources/fonts/Gilroy/Gilroy-MediumItalic.woff") format("woff"), url("../sources/fonts/Gilroy/Gilroy-MediumItalic.ttf") format("truetype");
+  font-weight: 500;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Gilroy";
+  src: url("../sources/fonts/Gilroy/Gilroy-Regular.eot");
+  src: local("../sources/fonts/Gilroy Regular"), local("Gilroy-Regular"), url("../sources/fonts/Gilroy/Gilroy-Regular.eot?#iefix") format("embedded-opentype"), url("../sources/fonts/Gilroy/Gilroy-Regular.woff2") format("woff2"), url("../sources/fonts/Gilroy/Gilroy-Regular.woff") format("woff"), url("../sources/fonts/Gilroy/Gilroy-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+body {
+  margin: 0;
+  font-family: "Gilroy";
+  background-color: #ffffff;
+}
+body .header {
+  height: 46px;
+  background-color: #ffffff;
+}
+body .header .container {
+  margin-left: 80px;
+  margin-right: 80px;
+  height: 46px;
+}
+body .header .container .items {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto;
+  grid-template-columns: auto auto;
+  padding-top: 12px;
+}
+body .header .container .items .name {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0;
+}
+body .header .container .items .name p {
+  margin: 0;
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 500;
+  font-style: 14px;
+  color: #20B84B;
+  padding-left: 10.75px;
+}
+body .header .container .items .navig_but {
+  text-align: right;
+}
+body .header .container .items .navig_but .navigation {
+  color: #000;
+  text-decoration: none;
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  margin-right: 32px;
+}
+body .header .searchpanel {
+  background-color: #20B84B;
+  height: 100px;
+}
+body .header .searchpanel .middle {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 25% 42% auto;
+  grid-template-columns: 25% 42% auto;
+  padding-top: 26px;
+}
+body .header .searchpanel .middle form {
+  position: relative;
+  width: 510px;
+  height: 48px;
+}
+body .header .searchpanel .middle form input, body .header .searchpanel .middle form button {
+  border: none;
+  outline: none;
+  background-repeat: 3px;
+}
+body .header .searchpanel .middle form input {
+  width: 100%;
+  height: 42px;
+  background: #FFFFFF;
+  padding-left: 15px;
+  border: 1px solid #D4DCDE;
+  border-radius: 14px;
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+}
+body .header .searchpanel .middle form input::-webkit-input-placeholder {
+  color: #B7BEC0;
+}
+body .header .searchpanel .middle form input::-moz-placeholder {
+  color: #B7BEC0;
+}
+body .header .searchpanel .middle form input:-ms-input-placeholder {
+  color: #B7BEC0;
+}
+body .header .searchpanel .middle form input::-ms-input-placeholder {
+  color: #B7BEC0;
+}
+body .header .searchpanel .middle form input::placeholder {
+  color: #B7BEC0;
+}
+body .header .searchpanel .middle form button {
+  padding-top: 14px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  cursor: pointer;
+  background: none;
+}
+body .header .searchpanel .middle-all {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+}
+body .header .searchpanel .middle-all div {
+  padding-left: 32px;
+  color: white;
+  float: right;
+}
+body .header .searchpanel .middle-all div .img-center {
+  text-align: right;
+}
+body .header .searchpanel .middle-all .middle-last {
+  margin-right: 0px;
+}
+
+body {
+  background-color: #F7F6F6;
+}
+
+.selection {
+  background-color: #F7F6F6;
+  margin: 0;
+  display: -ms-grid;
+  display: grid;
+}
+.selection p {
+  margin: 0;
+}
+.selection .content {
+  margin-top: 28px;
+  -ms-grid-row-align: center;
+  -ms-grid-column-align: center;
+  place-self: center;
+  background-color: #fff;
+  width: 466px;
+  height: 372px;
+  -webkit-box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.08);
+          box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.08);
+  border-radius: 20px;
+}
+.selection .content .selcontainer {
+  margin-left: 24px;
+  padding-right: 24px;
+  margin-top: 36px;
+}
+.selection .content .selcontainer .mail {
+  border: 1px solid #B7BEC0;
+  border-radius: 14px;
+  width: 410px;
+  height: 54px;
+  margin-bottom: 0px;
+  margin-top: 8px;
+  outline: none;
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+}
+.selection .content .selcontainer .mail::-webkit-input-placeholder {
+  color: #B7BEC0;
+}
+.selection .content .selcontainer .mail::-moz-placeholder {
+  color: #B7BEC0;
+}
+.selection .content .selcontainer .mail:-ms-input-placeholder {
+  color: #B7BEC0;
+}
+.selection .content .selcontainer .mail::-ms-input-placeholder {
+  color: #B7BEC0;
+}
+.selection .content .selcontainer .mail::placeholder {
+  color: #B7BEC0;
+}
+.selection .content .selcontainer .btn {
+  width: 418px;
+  height: 54px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  border: none;
+  border-radius: 14px;
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+}
+.selection .content .selcontainer .green {
+  background: #20B84B;
+  color: #fff;
+  margin-top: 24px;
+}
+.selection .content .selcontainer .green:hover {
+  background: #4FCB72;
+}
+.selection .content .selcontainer .white {
+  border: 1px solid #20B84B;
+  background-color: #fff;
+  color: #20B84B;
+  margin-top: 12px;
+  margin-bottom: 16px;
+}
+.selection .content .selcontainer .white:hover {
+  background: #f4f4f4;
+}

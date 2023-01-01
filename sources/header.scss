@@ -1,0 +1,157 @@
+@font-face {
+    font-family: 'Gilroy';
+    src: local('../sources/fonts/Gilroy/Gilroy Medium Italic'), local('Gilroy-Medium-Italic'),
+        url('../sources/fonts/Gilroy/Gilroy-MediumItalic.woff2') format('woff2'),
+        url('../sources/fonts/Gilroy/Gilroy-MediumItalic.woff') format('woff'),
+        url('../sources/fonts/Gilroy/Gilroy-MediumItalic.ttf') format('truetype');
+    font-weight: 500;
+    font-style: italic;
+  }
+
+@font-face {
+font-family: 'Gilroy';
+src: url('../sources/fonts/Gilroy/Gilroy-Regular.eot');
+src: local('../sources/fonts/Gilroy Regular'), local('Gilroy-Regular'),
+    url('../sources/fonts/Gilroy/Gilroy-Regular.eot?#iefix') format('embedded-opentype'),
+    url('../sources/fonts/Gilroy/Gilroy-Regular.woff2') format('woff2'),
+    url('../sources/fonts/Gilroy/Gilroy-Regular.woff') format('woff'),
+    url('../sources/fonts/Gilroy/Gilroy-Regular.ttf') format('truetype');
+font-weight: normal;
+font-style: normal;
+
+}
+
+
+$primary: #20B84B;
+
+
+body {
+    margin: 0;
+    font-family: 'Gilroy';
+    background-color: #ffffff;
+
+
+    .header {
+        height: 46px;
+        background-color: #ffffff;
+        .container {
+            margin-left: 80px;
+            margin-right: 80px;
+            height: 46px;
+
+            .items {
+                display: grid;
+                grid-template-columns: auto auto;
+                padding-top: 12px;
+
+                .name {
+                    display: flex;
+                    margin: 0;
+                    
+
+                    p {
+                        margin: 0;
+                        font-family: 'Gilroy';
+                        font-style: normal;
+                        font-weight: 500;
+                        font-style: 14px;
+                        color: $primary;
+                        padding-left: 10.75px;
+                    }
+                }
+
+
+                .navig_but{
+                    text-align: right;
+
+
+                    .navigation{
+                        color: #000;
+                        text-decoration: none;
+                        font-family: 'Gilroy';
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 14px;
+                        margin-right: 32px;
+                    }
+                }
+            }
+        }
+
+
+        .searchpanel {
+            background-color: $primary;
+            height: 100px;
+
+
+            .middle{
+                display: grid;
+                grid-template-columns: 25% 42% auto;
+                padding-top: 26px;
+
+
+                form {
+                    position: relative;
+                    width: 510px;
+                    height: 48px;
+
+                    input, button{
+                        border: none;
+                        outline: none;
+                        background-repeat: 3px;
+                    }
+
+                    input{
+                        width: 100%;
+                        height: 42px;
+                        background: #FFFFFF;
+                        padding-left: 15px;
+                        border: 1px solid #D4DCDE;
+                        border-radius: 14px;
+                        font-family: 'Gilroy';
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 16px;
+
+                        &::placeholder{
+                            color: #B7BEC0;
+                        }
+                    }
+
+                    button{
+                        padding-top: 14px;
+                        position: absolute;
+                        top: 0;
+                        right: 0;
+                        cursor: pointer;
+                        background: none;
+                    }
+                }
+            }
+
+
+                .middle-all{
+                    display: flex;
+                    text-align: center;
+
+                    div{
+                        padding-left: 32px;
+                        color: #FFFF;
+                        
+                        float: right;
+
+                        .img-center {
+                            text-align:  right;
+                        }
+
+                    }
+
+                    .middle-last {
+                        margin-right: 0px;
+                    }
+                }
+        }
+
+    }
+
+}

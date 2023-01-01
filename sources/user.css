@@ -1,0 +1,346 @@
+@font-face {
+  font-family: "Gilroy";
+  src: local("../sources/fonts/Gilroy/Gilroy Medium Italic"), local("Gilroy-Medium-Italic"), url("../sources/fonts/Gilroy/Gilroy-MediumItalic.woff2") format("woff2"), url("../sources/fonts/Gilroy/Gilroy-MediumItalic.woff") format("woff"), url("../sources/fonts/Gilroy/Gilroy-MediumItalic.ttf") format("truetype");
+  font-weight: 500;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Gilroy";
+  src: url("../sources/fonts/Gilroy/Gilroy-Regular.eot");
+  src: local("../sources/fonts/Gilroy Regular"), local("Gilroy-Regular"), url("../sources/fonts/Gilroy/Gilroy-Regular.eot?#iefix") format("embedded-opentype"), url("../sources/fonts/Gilroy/Gilroy-Regular.woff2") format("woff2"), url("../sources/fonts/Gilroy/Gilroy-Regular.woff") format("woff"), url("../sources/fonts/Gilroy/Gilroy-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+body {
+  margin: 0;
+  font-family: "Gilroy";
+  background-color: #ffffff;
+}
+body .header {
+  height: 46px;
+  background-color: #ffffff;
+}
+body .header .container {
+  margin-left: 80px;
+  margin-right: 80px;
+  height: 46px;
+}
+body .header .container .items {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto;
+  grid-template-columns: auto auto;
+  padding-top: 12px;
+}
+body .header .container .items .name {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0;
+}
+body .header .container .items .name p {
+  margin: 0;
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 500;
+  font-style: 14px;
+  color: #20B84B;
+  padding-left: 10.75px;
+}
+body .header .container .items .navig_but {
+  text-align: right;
+}
+body .header .container .items .navig_but .navigation {
+  color: #000;
+  text-decoration: none;
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  margin-right: 32px;
+}
+body .header .searchpanel {
+  background-color: #20B84B;
+  height: 100px;
+}
+body .header .searchpanel .middle {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 25% 42% auto;
+  grid-template-columns: 25% 42% auto;
+  padding-top: 26px;
+}
+body .header .searchpanel .middle form {
+  position: relative;
+  width: 510px;
+  height: 48px;
+}
+body .header .searchpanel .middle form input, body .header .searchpanel .middle form button {
+  border: none;
+  outline: none;
+  background-repeat: 3px;
+}
+body .header .searchpanel .middle form input {
+  width: 100%;
+  height: 42px;
+  background: #FFFFFF;
+  padding-left: 15px;
+  border: 1px solid #D4DCDE;
+  border-radius: 14px;
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+}
+body .header .searchpanel .middle form input::-webkit-input-placeholder {
+  color: #B7BEC0;
+}
+body .header .searchpanel .middle form input::-moz-placeholder {
+  color: #B7BEC0;
+}
+body .header .searchpanel .middle form input:-ms-input-placeholder {
+  color: #B7BEC0;
+}
+body .header .searchpanel .middle form input::-ms-input-placeholder {
+  color: #B7BEC0;
+}
+body .header .searchpanel .middle form input::placeholder {
+  color: #B7BEC0;
+}
+body .header .searchpanel .middle form button {
+  padding-top: 14px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  cursor: pointer;
+  background: none;
+}
+body .header .searchpanel .middle-all {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+}
+body .header .searchpanel .middle-all div {
+  padding-left: 32px;
+  color: white;
+  float: right;
+}
+body .header .searchpanel .middle-all div .img-center {
+  text-align: right;
+}
+body .header .searchpanel .middle-all .middle-last {
+  margin-right: 0px;
+}
+
+body {
+  background-color: #F7F6F6;
+}
+
+.change {
+  text-decoration: none;
+  color: #20B84B;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+input {
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  outline-style: none;
+}
+
+.btn {
+  width: 418px;
+  height: 54px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  border: none;
+  border-radius: 14px;
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+}
+
+.green {
+  background: #20B84B;
+  color: #fff;
+  margin-top: 24px;
+}
+.green:hover {
+  background: #4FCB72;
+}
+
+.red {
+  background: #ED3838;
+  color: #fff;
+  margin-top: 24px;
+}
+.red:hover {
+  background: #EB6565;
+}
+
+.white {
+  border: 1px solid #20B84B;
+  background-color: #fff;
+  color: #20B84B;
+  margin-top: 12px;
+  margin-bottom: 16px;
+}
+.white:hover {
+  background: #f4f4f4;
+}
+
+.red-white {
+  border: 1px solid #ED3838;
+  background-color: #fff;
+  color: #ED3838;
+  margin-top: 12px;
+  margin-bottom: 16px;
+}
+.red-white:hover {
+  background: #f4f4f4;
+}
+
+textarea {
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+}
+textarea::-webkit-input-placeholder {
+  color: #B7BEC0;
+}
+textarea::-moz-placeholder {
+  color: #B7BEC0;
+}
+textarea:-ms-input-placeholder {
+  color: #B7BEC0;
+}
+textarea::-ms-input-placeholder {
+  color: #B7BEC0;
+}
+textarea::placeholder {
+  color: #B7BEC0;
+}
+
+.selection {
+  background-color: #F7F6F6;
+  margin: 0;
+  display: -ms-grid;
+  display: grid;
+}
+.selection p {
+  margin: 0;
+}
+.selection .content {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 70% 30%;
+  grid-template-columns: 70% 30%;
+  margin-top: 28px;
+  margin-left: 50px;
+}
+.selection .content .selcontainer {
+  margin-left: 24px;
+  padding-right: 24px;
+  margin-top: 36px;
+  padding-top: 24px;
+  padding-left: 24px;
+  background-color: #fff;
+  -webkit-box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.08);
+          box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.08);
+  border-radius: 20px;
+}
+.selection .content .selcontainer .prof-logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 32px;
+}
+.selection .content .selcontainer .prof-logo #price .btn {
+  width: 418px;
+  height: 54px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  border: none;
+  border-radius: 14px;
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+}
+.selection .content .selcontainer .prof-logo #price .green {
+  background: #20B84B;
+  color: #fff;
+  margin-top: 24px;
+}
+.selection .content .selcontainer .prof-logo #price .green:hover {
+  background: #4FCB72;
+}
+.selection .content .selcontainer .line hr {
+  height: 1px;
+  background: #D4DCDE;
+  border: none;
+  margin-bottom: 32px;
+}
+
+.new-div {
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 100;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: auto;
+}
+.new-div .div-change {
+  width: 828px;
+  height: 680px;
+  background: rgb(255, 255, 255);
+  margin: auto;
+  border-radius: 20px;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+.new-div .div-change .input {
+  border: 1px solid #B7BEC0;
+  border-radius: 14px;
+  width: 382px;
+  height: 50px;
+  margin-bottom: 0px;
+}
+.new-div .div-change .sex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 382px;
+  height: 54px;
+  border: 1px solid #b6bcbe;
+  border-radius: 14px;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+.new-div .div-change .sex .btn-sex {
+  width: 200px;
+  margin-top: 4px;
+  height: 46px;
+  border: none;
+  border-radius: 10px;
+}
+.new-div .div-change .sex .sex-grey {
+  background-color: #E9EDEF;
+}
+.new-div .div-change .sex .sex-white {
+  background-color: #ffffff;
+}
