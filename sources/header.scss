@@ -26,6 +26,9 @@ $primary: #20B84B;
 
 
 body {
+    p {
+        margin: 0;
+    }
     margin: 0;
     font-family: 'Gilroy';
     background-color: #ffffff;
@@ -35,8 +38,9 @@ body {
         height: 46px;
         background-color: #ffffff;
         .container {
-            margin-left: 80px;
-            margin-right: 80px;
+            max-width: 1280px;
+            margin-left: auto;
+            margin-right: auto;
             height: 46px;
 
             .items {
@@ -46,6 +50,7 @@ body {
 
                 .name {
                     display: flex;
+                    align-items: center;
                     margin: 0;
                     
 
@@ -73,6 +78,10 @@ body {
                         font-weight: 500;
                         font-size: 14px;
                         margin-right: 32px;
+                    }
+
+                    .navigation-last{
+                        margin-right: 0;
                     }
                 }
             }
@@ -140,8 +149,8 @@ body {
                         
                         float: right;
 
-                        .img-center {
-                            text-align:  right;
+                        p {
+                            margin-top: 6px;
                         }
 
                     }

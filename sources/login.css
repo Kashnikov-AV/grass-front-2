@@ -16,13 +16,17 @@ body {
   font-family: "Gilroy";
   background-color: #ffffff;
 }
+body p {
+  margin: 0;
+}
 body .header {
   height: 46px;
   background-color: #ffffff;
 }
 body .header .container {
-  margin-left: 80px;
-  margin-right: 80px;
+  max-width: 1280px;
+  margin-left: auto;
+  margin-right: auto;
   height: 46px;
 }
 body .header .container .items {
@@ -36,6 +40,9 @@ body .header .container .items .name {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin: 0;
 }
 body .header .container .items .name p {
@@ -58,6 +65,9 @@ body .header .container .items .navig_but .navigation {
   font-weight: 500;
   font-size: 14px;
   margin-right: 32px;
+}
+body .header .container .items .navig_but .navigation-last {
+  margin-right: 0;
 }
 body .header .searchpanel {
   background-color: #20B84B;
@@ -126,8 +136,8 @@ body .header .searchpanel .middle-all div {
   color: white;
   float: right;
 }
-body .header .searchpanel .middle-all div .img-center {
-  text-align: right;
+body .header .searchpanel .middle-all div p {
+  margin-top: 6px;
 }
 body .header .searchpanel .middle-all .middle-last {
   margin-right: 0px;
