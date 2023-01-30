@@ -179,11 +179,13 @@ body .selection .content .selcontainer {
   margin-left: 24px;
   padding-right: 24px;
   margin-top: 36px;
+  padding-bottom: 36px;
 }
 body .selection .content .selcontainer .mail {
   border: 1px solid #B7BEC0;
   border-radius: 14px;
-  width: 413px;
+  width: 393px;
+  padding-left: 20px;
   height: 54px;
   margin-bottom: 0px;
   margin-top: 8px;
@@ -235,7 +237,7 @@ body .selection .content .selcontainer .white {
   background-color: #fff;
   color: #20B84B;
   margin-top: 12px;
-  margin-bottom: 16px;
+  margin-bottom: 36px;
 }
 body .selection .content .selcontainer .white:hover {
   background: #f4f4f4;
