@@ -66,6 +66,9 @@ body .header .container .items .navig_but .navigation {
   font-size: 14px;
   margin-right: 32px;
 }
+body .header .container .items .navig_but :nth-child(5) {
+  margin-right: 0;
+}
 body .header .container .items .navig_but .navigation-last {
   margin-right: 0;
 }
