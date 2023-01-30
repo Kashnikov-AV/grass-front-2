@@ -16,34 +16,43 @@ body {
   font-family: "Gilroy";
   background-color: #ffffff;
 }
+body p {
+  margin: 0;
+}
 body .header {
   height: 46px;
   background-color: #ffffff;
 }
 body .header .container {
-  margin-left: 80px;
-  margin-right: 80px;
-  height: 46px;
+  max-width: 1280px;
+  margin-left: auto;
+  margin-right: auto;
 }
 body .header .container .items {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: auto auto;
   grid-template-columns: auto auto;
-  padding-top: 12px;
+  padding-top: 15px;
+  padding-bottom: 15px;
 }
 body .header .container .items .name {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin: 0;
 }
 body .header .container .items .name p {
   margin: 0;
+  padding-top: 1px;
   font-family: "Gilroy";
   font-style: normal;
   font-weight: 500;
   font-style: 14px;
+  line-height: 1;
   color: #20B84B;
   padding-left: 10.75px;
 }
@@ -59,6 +68,9 @@ body .header .container .items .navig_but .navigation {
   font-size: 14px;
   margin-right: 32px;
 }
+body .header .container .items .navig_but .navigation-last {
+  margin-right: 0;
+}
 body .header .searchpanel {
   background-color: #20B84B;
   height: 100px;
@@ -72,6 +84,7 @@ body .header .searchpanel .middle {
 }
 body .header .searchpanel .middle form {
   position: relative;
+  display: block;
   width: 510px;
   height: 48px;
 }
@@ -119,15 +132,14 @@ body .header .searchpanel .middle-all {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: right;
+      -ms-flex-pack: right;
+          justify-content: right;
   text-align: center;
 }
 body .header .searchpanel .middle-all div {
   padding-left: 32px;
   color: white;
-  float: right;
-}
-body .header .searchpanel .middle-all div .img-center {
-  text-align: right;
 }
 body .header .searchpanel .middle-all .middle-last {
   margin-right: 0px;
