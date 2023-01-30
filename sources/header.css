@@ -132,6 +132,9 @@ body .header .searchpanel .middle-all {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: right;
+      -ms-flex-pack: right;
+          justify-content: right;
   text-align: center;
 }
 body .header .searchpanel .middle-all div {
