@@ -183,8 +183,9 @@ body .selection .content .selcontainer {
 body .selection .content .selcontainer .mail {
   border: 1px solid #B7BEC0;
   border-radius: 14px;
-  width: 413px;
+  width: 393px;
   height: 54px;
+  padding-left: 20px;
   margin-bottom: 0px;
   margin-top: 8px;
   outline: none;
@@ -192,21 +193,40 @@ body .selection .content .selcontainer .mail {
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
+  line-height: 1;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 body .selection .content .selcontainer .mail input::-webkit-input-placeholder {
   color: #B7BEC0;
+  -webkit-box-align: center;
+          align-items: center;
+  line-height: 1;
 }
 body .selection .content .selcontainer .mail input::-moz-placeholder {
   color: #B7BEC0;
+  align-items: center;
+  line-height: 1;
 }
 body .selection .content .selcontainer .mail input:-ms-input-placeholder {
   color: #B7BEC0;
+  -ms-flex-align: center;
+      align-items: center;
+  line-height: 1;
 }
 body .selection .content .selcontainer .mail input::-ms-input-placeholder {
   color: #B7BEC0;
+  -ms-flex-align: center;
+      align-items: center;
+  line-height: 1;
 }
 body .selection .content .selcontainer .mail input::placeholder {
   color: #B7BEC0;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  line-height: 1;
 }
 body .selection .content .selcontainer .sex {
   display: -webkit-box;
