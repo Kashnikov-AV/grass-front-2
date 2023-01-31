@@ -182,7 +182,8 @@ body {
 .selection .content .selcontainer .mail {
   border: 1px solid #B7BEC0;
   border-radius: 14px;
-  width: 410px;
+  padding-left: 20px;
+  width: 390px;
   height: 54px;
   margin-bottom: 14px;
   margin-top: 32px;
@@ -211,7 +212,8 @@ body {
   border: 1px solid #B7BEC0;
   border-radius: 14px;
   height: 54px;
-  width: 410px;
+  width: 390px;
+  padding-left: 20px;
   color: #B7BEC0;
   margin-bottom: 8px;
   outline: none;
